@@ -1,7 +1,7 @@
 nextflow.enable.dsl=2
 
 process PROCESO_WASM {
-    container 'ghcr.io/fermyon/spin-command-rust-fixtures:v0.1.0'
+    container 'ghcr.io/fermyon/wasm-pkg/fermyon/hello-world:1.0.0'
     ext containerEngine: 'wasm'
 
     input:
