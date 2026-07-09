@@ -1,8 +1,8 @@
 nextflow.enable.dsl=2
 
 process PROCESO_WASM {
-    ext.containerEngine = 'wasm'
     container 'ghcr.io/fermyon/spin-command-rust-fixtures:v0.1.0'
+    ext containerEngine: 'wasm'
 
     input:
     val muestra
