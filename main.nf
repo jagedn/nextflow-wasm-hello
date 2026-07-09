@@ -18,5 +18,5 @@ process PROCESO_WASM {
 
 workflow {
     def canal_entrada = channel.of('Hola', 'Mundo')
-    PROBAR_WASM(canal_entrada) | view
+    PROCESO_WASM(canal_entrada) | view
 }
